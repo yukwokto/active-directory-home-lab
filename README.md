@@ -6,6 +6,7 @@ It is intended for educational purposes, allowing users to experiment with AD fe
 This lab is inspired by Madakor on YouTube.
 
 ## Home Lab Architecture
+![lab-arch](https://github.com/yukwokto/active-directory-home-lab/)
 
 ## Prerequisites
 
@@ -47,10 +48,38 @@ This lab is inspired by Madakor on YouTube.
 9. Enable network address translation.
 ![nat](https://github.com/yukwokto/active-directory-home-lab/)
 
+10. Install DHCP Server.
+![dhcp](https://github.com/yukwokto/active-directory-home-lab/)
+
+11. Define a dhcp pool (172.16.0.100-200/24)
+![dhcp-pool](https://github.com/yukwokto/active-directory-home-lab/)
+
+12. Verify the dhcp set up.
+![verrify-dhcp](https://github.com/yukwokto/active-directory-home-lab/)
+
+13. Create more than 1000 users using a PowerShell Script. Verify the user creation.
+![create-users](https://github.com/yukwokto/active-directory-home-lab/)
 
 
+### Client PC Set Up
 
+1. Install Windows 10 Home Pro.
+![windows-10-install](https://github.com/yukwokto/active-directory-home-lab/)
 
+2. Join the client PC to the domain (mydomain.com)
+![join-domain](https://github.com/yukwokto/active-directory-home-lab/)
+
+3. Back to the Windows Server, verify the new computer association in the domain controller. 
+![verify-computer](https://github.com/yukwokto/active-directory-home-lab/)
+
+4. Sign in to the client PC using one of the account.
+![sign-in-client](https://github.com/yukwokto/active-directory-home-lab/)
+
+5. Verify the Client in Cmd by whoami.
+![whoami](https://github.com/yukwokto/active-directory-home-lab/)
+
+6. Verify Client Network Configuration by ipconfig/all
+![ip-config](https://github.com/yukwokto/active-directory-home-lab/)
 
 
 
